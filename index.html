@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASE | Engenharia de Segurança Patrimonial Estratégica</title>
+    <meta name="description" content="Sistemas integrados de inteligência preventiva e arquitetura de proteção patrimonial.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0B1F3B;
+            --dark: #0A0A0A;
+            --accent: #F2B705;
+            --success: #2E7D32;
+            --gray: #6C757D;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: var(--dark);
+            color: #e0e0e0;
+            line-height: 1.75;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 5%; }
+        header {
+            background: rgba(11, 31, 59, 0.98);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            border-bottom: 1px solid #1a2a4a;
+        }
+        nav a { 
+            color: #e0e0e0; 
+            text-decoration: none; 
+            margin-left: 2rem; 
+            font-weight: 500; 
+        }
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(11, 31, 59, 0.92), rgba(10, 10, 10, 0.95)), #0B1F3B;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+        }
+        .tagline {
+            font-size: 3.1rem;
+            line-height: 1.15;
+            margin-bottom: 1.8rem;
+            color: white;
+        }
+        section { padding: 110px 0; }
+        .section-title {
+            font-size: 2.35rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            padding-left: 28px;
+        }
+        .section-title:before {
+            content: '▌';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 2.2rem;
+        }
+        .fase-cell {
+            border-left: 5px solid var(--primary);
+            background: #111;
+            padding: 1.8rem;
+            margin: 1.5rem 0;
+        }
+        .highlight {
+            background: rgba(242, 183, 5, 0.08);
+            padding: 1.5rem;
+            border-left: 4px solid var(--accent);
+        }
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        form {
+            max-width: 520px;
+            margin: 2rem auto 0;
+            display: grid;
+            gap: 1rem;
+        }
+        input, button {
+            padding: 14px 18px;
+            font-family: Georgia, serif;
+        }
+        button {
+            background: var(--accent);
+            color: #0B1F3B;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #050505;
+            padding: 80px 5% 40px;
+            text-align: center;
+            color: var(--gray);
+        }
+        @media (max-width: 768px) {
+            .tagline { font-size: 2.4rem; }
+            nav a { margin-left: 1rem; font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container" style="display:flex; justify-content:space-between; align-items:center; padding:1.2rem 5%;">
+            <div style="font-family:'Montserrat', sans-serif; font-size:1.65rem; font-weight:700;">FASE</div>
+            <nav>
+                <a href="#sistema">Sistema</a>
+                <a href="#arquitetura">Arquitetura</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#metodologia">Metodologia</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="tagline">PRECISION-ENGINEERED<br>SEGURANÇA PATRIMONIAL</h1>
+            <p style="font-size:1.35rem; max-width:780px; color:#c8d0e0;">
+                Infraestrutura de inteligência preventiva e arquitetura operacional projetada para gestores e operadores que exigem controle sistemático e mitigação estrutural de riscos patrimoniais.
+            </p>
+            <a href="#contato" style="display:inline-block; margin-top:2.5rem; background:var(--accent); color:#0B1F3B; padding:18px 52px; font-family:'Montserrat', sans-serif; font-weight:600; text-decoration:none; border-radius:3px;">
+                Iniciar Análise Estratégica
+            </a>
+        </div>
+    </section>
+
+    <section id="sistema">
+        <div class="container">
+            <h2 class="section-title">O Sistema FASE</h2>
+            <p style="font-size:1.22rem; max-width:820px;">
+                Não entregamos serviços pontuais. Construímos sistemas operacionais de proteção patrimonial — infraestrutura integrada que transforma risco em variável controlável.
+            </p>
+            <div class="fase-cell"><strong>Full-Funnel Risk Mitigation Engine</strong> — Proteção contínua com resposta autônoma.</div>
+            <div class="fase-cell"><strong>Precision Targeting de Vulnerabilidades</strong> — Inteligência contextualizada.</div>
+            <div class="fase-cell"><strong>Agentic AI Systems</strong> — Monitoramento preventivo autônomo.</div>
+        </div>
+    </section>
+
+    <section id="arquitetura" style="background:#111;">
+        <div class="container">
+            <h2 class="section-title">Arquitetura de Proteção Estratégica</h2>
+            <div class="results-grid">
+                <div class="highlight"><h3>Proteção em Múltiplas Camadas</h3><p>Resiliência sistêmica contra falhas em cadeia.</p></div>
+                <div class="highlight"><h3>Inteligência de Risco Contínua</h3><p>Modelagem preditiva e inteligência contra ameaças (*threat intelligence*).</p></div>
+                <div class="highlight"><h3>Gestão do Ciclo de Vida</h3><p>Monitoramento 24/7 com capacidade agêntica (*agentic*).</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resultados">
+        <div class="container">
+            <h2 class="section-title">Resultados Estratégicos</h2>
+            <p style="max-width:820px; font-size:1.2rem;">
+                Aplicações documentadas demonstram ganhos consistentes em previsibilidade, redução de riscos e conformidade operacional (Capítulo 45 – BIV-FASE).
+            </p>
+            
+            <div class="results-grid">
+                <div class="highlight">
+                    <strong>Redução de Risco Residual</strong><br>
+                    <span style="color:var(--success); font-size:2.1rem;">&ge; 40%</span>
+                </div>
+                <div class="highlight">
+                    <strong>Rastreabilidade Decisória</strong><br>
+                    <span style="color:var(--success); font-size:2.1rem;">&ge; 95%</span>
+                </div>
+                <div class="highlight">
+                    <strong>Taxa de Execução de Protocolos</strong><br>
+                    <span style="color:var(--success); font-size:2.1rem;">&ge; 97%</span>
+                </div>
+            </div>
+
+            <!-- Teaser do E-book -->
+            <div style="margin-top:4rem; padding:2.5rem; background:#111; border-left:5px solid var(--accent);">
+                <h3 style="margin-top:0;">Manual Estratégico FASE</h3>
+                <p style="margin-bottom:1.5rem;">Em fase final de acabamento. Em breve, disponível com diagramação completa, imagens técnicas e Planilha Executiva v1.0.</p>
+                
+                <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+                    <input type="text" name="nome" placeholder="Nome" required style="width:100%;">
+                    <input type="email" name="email" placeholder="E-mail corporativo" required style="width:100%;">
+                    <input type="text" name="empresa" placeholder="Empresa / Instituição" required style="width:100%;">
+                    <input type="text" name="cargo" placeholder="Cargo" style="width:100%;">
+                    <button type="submit" style="width:100%;">Solicitar Acesso Antecipado</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodologia" style="background:#111;">
+        <div class="container">
+            <h2 class="section-title">Metodologia FASE</h2>
+            <div class="fase-cell">
+                <strong>CÉLULA FASE</strong> — Unidade operacional fundamental:<br>
+                Conceito &rarr; Indicador &rarr; Meta &rarr; Decisão &rarr; Base Normativa &rarr; Registro &rarr; Replicação
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container" style="text-align:center; max-width:720px;">
+            <h2 class="section-title">Diálogo Institucional</h2>
+            <p style="font-size:1.25rem; margin:2rem 0;">
+                Para gestores e operadores que gerenciam patrimônio relevante e buscam transformar a segurança em vantagem competitiva estrutural.
+            </p>
+            <a href="mailto:contato@fase.eng" style="background:#0B1F3B; color:white; padding:18px 48px; font-family:'Montserrat', sans-serif; font-weight:600; text-decoration:none; border:1px solid #F2B705;">
+                Iniciar Conversa Estratégica
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="font-family:'Montserrat', sans-serif; font-size:1.1rem;">FASE — Engenharia de Segurança Patrimonial Estratégica</p>
+            <p>Arquitetura Preventiva &bull; Inteligência Operacional &bull; Controle Sistemático</p>
+            <p style="margin-top:2rem; font-size:0.9rem; opacity:0.6;">&copy; 2026 • Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
