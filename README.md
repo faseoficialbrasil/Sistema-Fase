@@ -23,3 +23,12 @@ O ecossistema técnico foi estruturado de forma limpa e modular, seguindo as mel
 ├── index.html        # Estrutura semântica e conteúdo da vitrine institucional
 ├── style.css         # Arquitetura de estilos e responsividade adaptativa
 └── README.md         # Documentação técnica e governança do projeto
+
+📈 Indicadores de Performance Sistêmica (KPIs)
+​Os modelos matemáticos e operacionais aplicados à Célula FASE visam a atingir os seguintes patamares documentados:
+​Redução de Risco Residual: ≥ 40%
+​Rastreabilidade Decisória: ≥ 95%
+​Taxa de Execução de Protocolos: ≥ 97%
+​⚖️ Governança e Propriedade
+​Todo o conteúdo conceitual, marcas e metodologias (incluindo as referências ao Capítulo 45 – BIV-FASE) são de propriedade exclusiva da FASE.
+© 2026 • Todos os direitos reservados.
