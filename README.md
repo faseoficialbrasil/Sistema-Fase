@@ -17,13 +17,6 @@ O ecossistema técnico foi estruturado de forma limpa e modular, seguindo as mel
 - **Tipografia Corporativa:** Integração das famílias *Montserrat* (para títulos de forte apelo institucional) e *Georgia* (para leitura densa e sofisticada de relatórios).
 - **Integração de Captura:** Formulação preparada para o recebimento de dados e conversão via endpoints especializados (`Formspree`).
 
-## 📐 Estrutura do Repositório
-
-```text
-├── index.html        # Estrutura semântica e conteúdo da vitrine institucional
-├── style.css         # Arquitetura de estilos e responsividade adaptativa
-└── README.md         # Documentação técnica e governança do projeto
-
 📈 Indicadores de Performance Sistêmica (KPIs)
 ​Os modelos matemáticos e operacionais aplicados à Célula FASE visam a atingir os seguintes patamares documentados:
 ​Redução de Risco Residual: ≥ 40%
@@ -32,3 +25,11 @@ O ecossistema técnico foi estruturado de forma limpa e modular, seguindo as mel
 ​⚖️ Governança e Propriedade
 ​Todo o conteúdo conceitual, marcas e metodologias (incluindo as referências ao Capítulo 45 – BIV-FASE) são de propriedade exclusiva da FASE.
 © 2026 • Todos os direitos reservados.
+
+## 📐 Estrutura do Repositório
+
+```text
+├── index.html        # Estrutura semântica e conteúdo da vitrine institucional
+├── style.css         # Arquitetura de estilos e responsividade adaptativa
+└── README.md         # Documentação técnica e governança do projeto
+
