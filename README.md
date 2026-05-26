@@ -17,7 +17,8 @@ O ecossistema técnico foi estruturado de forma limpa e modular, seguindo as mel
 - **Tipografia Corporativa:** Integração das famílias *Montserrat* (para títulos de forte apelo institucional) e *Georgia* (para leitura densa e sofisticada de relatórios).
 - **Integração de Captura:** Formulação preparada para o recebimento de dados e conversão via endpoints especializados (`Formspree`).
 
-📈 Indicadores de Performance Sistêmica (KPIs)
+## 📈 Indicadores de Performance Sistêmica (KPIs)
+
 ​Os modelos matemáticos e operacionais aplicados à Célula FASE visam a atingir os seguintes patamares documentados:
 ​Redução de Risco Residual: ≥ 40%
 ​Rastreabilidade Decisória: ≥ 95%
