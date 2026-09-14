@@ -8,115 +8,117 @@
   <title>FASE — Gestão Premium</title>
 
   <style type="text/css">
-  :root {
-    --azul: #0A1F44;
-    --cinza: #4A4A4A;
-    --dourado: #C9A646;
-    --branco: #FFFFFF;
-  }
-
-  html, body {
-    height: 100%; /* ocupa toda a altura da tela */
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family: 'Inter', 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
-
-    /* Background institucional */
-    background-image: url('img/fase-background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--branco); /* texto claro sobre fundo escuro */
-  }
-
-  /* Cabeçalho */
-  #header {
-    background: rgba(10, 31, 68, 0.85); /* overlay translúcido */
-    color: var(--branco);
-    text-align: center;
-    padding: 1.5rem 1rem;
-  }
-
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--dourado);
-    margin-bottom: 0.5rem;
-  }
-
-  /* Menu mobile first */
-  #nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(74, 74, 74, 0.85);
-    margin: 0;
-    padding: 0.5rem;
-  }
-
-  #nav ul li { margin: 0.5rem 0; }
-
-  #nav ul li a {
-    color: var(--branco);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-  }
-
-  #nav ul li a:hover { color: var(--dourado); }
-
-  /* Conteúdo */
-  #main {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    background: rgba(0, 0, 0, 0.6); /* fundo escuro translúcido */
-    border-radius: 6px;
-  }
-
-  .section h2 {
-    color: var(--dourado);
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-  }
-
-  .section { margin-bottom: 2rem; }
-
-  /* Rodapé */
-  #footer {
-    background: rgba(10, 31, 68, 0.85);
-    color: var(--branco);
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-
-  #footer a {
-    color: var(--dourado);
-    text-decoration: none;
-  }
-
-  /* Ajustes para telas maiores */
-  @media (min-width: 768px) {
-    #nav ul {
-      flex-direction: row;
-      justify-content: center;
+    :root {
+      --azul: #0A1F44;
+      --cinza: #4A4A4A;
+      --dourado: #C9A646;
+      --branco: #FFFFFF;
     }
-    #nav ul li { margin: 0 1rem; }
-    .logo { font-size: 2rem; }
-    .section h2 { font-size: 1.5rem; }
-  }
-</style>
+
+    html, body {
+      height: 100%; /* ocupa toda a altura da tela */
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+
+      /* Background institucional */
+      background-image: url('img/fase-background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: var(--branco); /* texto claro sobre fundo escuro */
+    }
+
+    /* Cabeçalho */
+    #header {
+      background: rgba(10, 31, 68, 0.85); /* overlay translúcido */
+      color: var(--branco);
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--dourado);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Menu mobile first */
+    #nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(74, 74, 74, 0.85);
+      margin: 0;
+      padding: 0.5rem;
+    }
+
+    #nav ul li { margin: 0.5rem 0; }
+
+    #nav ul li a {
+      color: var(--branco);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    #nav ul li a:hover { color: var(--dourado); }
+
+    /* Conteúdo */
+    #main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: rgba(0, 0, 0, 0.6); /* fundo escuro translúcido */
+      border-radius: 6px;
+    }
+
+    .section h2 {
+      color: var(--dourado);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .section { margin-bottom: 2rem; }
+
+    /* Rodapé */
+    #footer {
+      background: rgba(10, 31, 68, 0.85);
+      color: var(--branco);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    #footer a {
+      color: var(--dourado);
+      text-decoration: none;
+    }
+
+    /* Ajustes para telas maiores */
+    @media (min-width: 768px) {
+      #nav ul {
+        flex-direction: row;
+        justify-content: center;
+      }
+      #nav ul li { margin: 0 1rem; }
+      .logo { font-size: 2.5rem; }
+      .section h2 { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 
 <body>
   <div id="header">
-    <div class="logo">FASE</div>
+    <div class="logo">FASE — REDE OPERACIONAL</div>
     <p>Integração, transparência e excelência em facilities e eventos</p>
   </div>
 
