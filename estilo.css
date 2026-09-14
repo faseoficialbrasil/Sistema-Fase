@@ -130,3 +130,20 @@ section h2 {
   font-size: 1rem;
   border-top: 2px solid var(--dourado);
   }
+/* Links padrão */
+a {
+  color: var(--dourado);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Links visitados */
+a:visited {
+  color: var(--dourado);
+}
+
+/* Links ao passar o mouse */
+a:hover {
+  color: var(--branco-suave);
+  text-decoration: underline;
+}
