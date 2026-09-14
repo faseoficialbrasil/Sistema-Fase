@@ -7,11 +7,35 @@
 
 body {
   font-family: 'Inter', 'Helvetica Neue', sans-serif;
-  font-size: 18px; /* fonte base maior */
+  font-size: 18px;
   line-height: 1.6;
   margin: 0;
-  background: url('img/fase-background.jpeg') no-repeat center/cover;
-  color: var(--branco);
+  background: url('img/fase-background.png') no-repeat center/cover;
+  color: #F0F0F0; /* cinza claro em vez de branco puro */
+}
+
+/* Overlay para melhorar contraste */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6); /* camada translúcida */
+  z-index: -1;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: var(--dourado);
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #F0F0F0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dourado);
 }
 
 /* Cabeçalho */
