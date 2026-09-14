@@ -167,12 +167,12 @@ body {
     font-size: 18px;   /* texto mais equilibrado em celular */
     line-height: 1.6;
   }
-  }
-/* Ajuste para links longos (como e-mail) */
-#contato a {
-  display: inline-block;
-  max-width: 100%;       /* ocupa toda a largura disponível */
-  word-break: break-word; /* quebra o texto se necessário */
-  overflow-wrap: anywhere;
-  font-size: 1.2rem;     /* aumenta a legibilidade */
+  /* Ajuste para campo de e-mail */
+#contato p a {
+  display: block;          /* força o link a ocupar a linha inteira */
+  max-width: 100%;         /* ocupa toda a largura disponível */
+  word-break: break-word;  /* quebra o texto se necessário */
+  overflow-wrap: anywhere; /* garante quebra em qualquer ponto */
+  font-size: 1.2rem;       /* aumenta a legibilidade */
+  margin-top: 0.5rem;      /* dá espaço entre telefone e e-mail */
 }
