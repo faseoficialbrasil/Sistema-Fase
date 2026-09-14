@@ -1,160 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>FASE — Gestão Premium</title>
-
-  <style type="text/css">
-    :root {
-      --azul: #0A1F44;
-      --cinza: #4A4A4A;
-      --dourado: #C9A646;
-      --branco: #FFFFFF;
-    }
-
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', 'Helvetica Neue', sans-serif;
-      line-height: 1.6;
-      background-image: url('img/fase-background.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: var(--branco);
-    }
-
-    /* Cabeçalho */
-    #header {
-      background: rgba(10, 31, 68, 0.85);
-      color: var(--branco);
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-
-    .logo {
-      font-size: 2rem;
-      font-weight: bold;
-      color: var(--dourado);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 0.5rem;
-    }
-
-    /* Menu */
-    #nav ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: rgba(74, 74, 74, 0.85);
-      margin: 0;
-      padding: 0.5rem;
-    }
-
-    #nav ul li { margin: 0.5rem 0; }
-
-    #nav ul li a {
-      color: var(--branco);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-    }
-
-    #nav ul li a:hover { color: var(--dourado); }
-
-    /* Conteúdo */
-    #main {
-      width: 100%;               /* ocupa toda a largura */
-      margin: 0;
-      padding: 2rem 1rem;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    .section h2 {
-      color: var(--dourado);
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
-    }
-
-    .section { margin-bottom: 2rem; }
-
-    /* Links de contato */
-    #contato a {
-      color: var(--dourado);
-      font-size: 1.1rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    #contato a:hover {
-      color: var(--branco);
-    }
-
-    /* Rodapé */
-    #footer {
-      background: rgba(10, 31, 68, 0.85);
-      color: var(--branco);
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      border-top: 2px solid var(--dourado); /* linha dourada elegante */
-    }
-
-    #footer a {
-      color: var(--dourado);
-      text-decoration: none;
-    }
-
-    /* Ajustes para telas maiores */
-    @media (min-width: 768px) {
-      #nav ul {
-        flex-direction: row;
-        justify-content: center;
-      }
-      #nav ul li { margin: 0 1rem; }
-      .logo { font-size: 2.5rem; }
-      .section h2 { font-size: 1.5rem; }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>FASE — Rede Operacional</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div id="header">
+  <!-- Cabeçalho -->
+  <header id="header">
     <div class="logo">FASE — REDE OPERACIONAL</div>
-    <p>Integração, transparência e excelência em facilities e eventos</p>
-  </div>
+    <button class="menu-toggle">☰</button>
+  </header>
 
-  <div id="nav">
+  <!-- Menu hambúrguer -->
+  <nav id="nav" class="hidden">
     <ul>
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a href="#inicio" class="menu-item">Início</a></li>
+      <li><a href="#servicos" class="menu-item">Serviços</a></li>
+      <li><a href="#portfolio" class="menu-item">Portfólio</a></li>
+      <li><a href="#depoimentos" class="menu-item">Depoimentos</a></li>
+      <li><a href="#equipe" class="menu-item">Equipe</a></li>
+      <li><a href="#contato" class="menu-item">Contato</a></li>
     </ul>
-  </div>
+  </nav>
 
-  <div id="main">
-    <div class="section" id="inicio">
+  <!-- Conteúdo principal -->
+  <main id="main">
+    <section id="inicio">
       <h2>Sobre a FASE</h2>
       <p>A FASE é uma arquitetura de operação voltada para eventos e condomínios de alto padrão, coordenando prestadores independentes com foco em organização e blindagem jurídica.</p>
-    </div>
+    </section>
 
-    <div class="section" id="contato">
+    <section id="contato">
       <h2>Contato</h2>
       <p>Solicite uma apresentação personalizada e descubra como a FASE pode elevar a gestão do seu condomínio ou evento.</p>
       <p>📞 WhatsApp: <a href="tel:+5511951987669">+55 11 95198‑7669</a></p>
       <p>✉ <a href="mailto:faseoficialbrasil@gmail.com.br">faseoficialbrasil@gmail.com.br</a></p>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <div id="footer">
+  <!-- Rodapé -->
+  <footer id="footer">
     <p>© 2026 FASE — Gestão Premium de Facilities e Eventos</p>
-  </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.getElementById('nav').classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
