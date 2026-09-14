@@ -1,59 +1,113 @@
+/* ===========================
+   Variáveis de identidade FASE
+   =========================== */
 :root {
-  --azul: #0A1F44;
-  --cinza: #4A4A4A;
-  --dourado: #C9A646;
+  --azul: #0A1F44;     /* autoridade, confiança */
+  --cinza: #4A4A4A;    /* tecnologia, neutralidade */
+  --dourado: #C9A646;  /* excelência, valor */
   --branco: #FFFFFF;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
+/* Reset básico */
+* {
   margin: 0;
-  background: var(--branco);
-  color: var(--cinza);
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  background: var(--branco);
+  color: var(--cinza);
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
 header {
   background: var(--azul);
   color: var(--branco);
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
-.logo {
+header .logo {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--dourado);
+  margin-bottom: 0.5rem;
 }
 
+header p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Menu principal */
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   background: var(--cinza);
-  margin: 0;
-  padding: 0.5rem;
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
 }
 
 nav ul li a {
   color: var(--branco);
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
+nav ul li a:hover {
+  color: var(--dourado);
+}
+
+/* Conteúdo principal */
 main {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
+main h2 {
+  color: var(--azul);
+  margin-bottom: 0.5rem;
+}
+
+main section {
+  margin-bottom: 2rem;
+}
+
+/* Rodapé */
 footer {
   background: var(--azul);
   color: var(--branco);
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--dourado);
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+  }
 }
