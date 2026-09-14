@@ -10,7 +10,7 @@ body {
   font-size: 18px;
   line-height: 1.6;
   margin: 0;
-  background: url('img/fase-background.png') no-repeat center/cover;
+  background: url('img/fase-fundo.jpeg') no-repeat center/cover;
   color: var(--branco-suave);
 }
 
