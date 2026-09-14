@@ -34,12 +34,11 @@ body::before {
   align-items: center;
 }
 
-.logo {
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--dourado);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.logo img {
+  max-width: 300px;   /* define largura máxima */
+  height: auto;       /* mantém proporção */
+  display: block;     /* evita espaços extras */
+  margin: 0 auto;     /* centraliza no cabeçalho */
 }
 
 /* Menu */
