@@ -14,19 +14,9 @@
       --dourado: #C9A646;
       --branco: #FFFFFF;
     }
-#contato a {
-  color: var(--dourado);       /* cor dourada */
-  font-size: 1.1rem;           /* aumenta o tamanho */
-  font-weight: bold;           /* dá destaque */
-  text-decoration: none;       /* remove sublinhado */
-}
-
-#contato a:hover {
-  color: var(--branco);        /* muda para branco ao passar o mouse */
-}
 
     html, body {
-      height: 100%; /* ocupa toda a altura da tela */
+      height: 100%;
       margin: 0;
       padding: 0;
     }
@@ -34,18 +24,16 @@
     body {
       font-family: 'Inter', 'Helvetica Neue', sans-serif;
       line-height: 1.6;
-
-      /* Background institucional */
-      background-image: url('img/fase-background.jpeg');
+      background-image: url('img/fase-background.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      color: var(--branco); /* texto claro sobre fundo escuro */
+      color: var(--branco);
     }
 
     /* Cabeçalho */
     #header {
-      background: rgba(10, 31, 68, 0.85); /* overlay translúcido */
+      background: rgba(10, 31, 68, 0.85);
       color: var(--branco);
       text-align: center;
       padding: 1.5rem 1rem;
@@ -60,7 +48,7 @@
       margin-bottom: 0.5rem;
     }
 
-    /* Menu mobile first */
+    /* Menu */
     #nav ul {
       list-style: none;
       display: flex;
@@ -84,12 +72,11 @@
 
     /* Conteúdo */
     #main {
-  max-width: 1200px;           /* aumenta limite */
-  margin: 2rem auto;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 6px;
-}
+      width: 100%;               /* ocupa toda a largura */
+      margin: 0;
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.6);
+    }
 
     .section h2 {
       color: var(--dourado);
@@ -99,6 +86,18 @@
 
     .section { margin-bottom: 2rem; }
 
+    /* Links de contato */
+    #contato a {
+      color: var(--dourado);
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    #contato a:hover {
+      color: var(--branco);
+    }
+
     /* Rodapé */
     #footer {
       background: rgba(10, 31, 68, 0.85);
@@ -106,6 +105,7 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+      border-top: 2px solid var(--dourado); /* linha dourada elegante */
     }
 
     #footer a {
@@ -149,7 +149,7 @@
       <h2>Contato</h2>
       <p>Solicite uma apresentação personalizada e descubra como a FASE pode elevar a gestão do seu condomínio ou evento.</p>
       <p>📞 WhatsApp: <a href="tel:+5511951987669">+55 11 95198‑7669</a></p>
-      <p>✉ faseoficialbrasil@gmail.com.br</p>
+      <p>✉ <a href="mailto:faseoficialbrasil@gmail.com.br">faseoficialbrasil@gmail.com.br</a></p>
     </div>
   </div>
 
