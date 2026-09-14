@@ -4,36 +4,71 @@ A FASE é uma arquitetura de operação voltada para **eventos e condomínios de
 
 ---
 
+## Sumário
+
+- [O que a FASE não é](#o-que-a-fase-n%C3%A3o-%C3%A9)
+- [Estrutura de Atuação](#estrutura-de-atua%C3%A7%C3%A3o)
+  - [Padronização Operacional](docs/padronizacao-operacional.md)
+  - [Gestão Integrada de Prestadores](docs/gestao-integrada-prestadores.md)
+  - [Relatórios e Indicadores](docs/relatorios-e-indicadores.md)
+  - [Caixa de Operação](docs/caixa-de-operacao.md)
+- [Diferenciais FASE](#diferenciais-fase)
+- [Como contribuir](#como-contribuir)
+- [Licença](#licença)
+- [Contato](#contato)
+
+---
+
 ## 🚫 O que a FASE não é
-- Não é empresa de CFTV, portaria ou controle de acesso.  
-- É uma **gestão premium de facilities e eventos**, que integra diferentes prestadores de serviço em uma operação única e eficiente.  
+
+- Não é empresa de Circuito Fechado de TV (CFTV), portaria ou controle de acesso.
+- Não presta serviços como uma única prestadora de mão de obra; atua como gestora e integradora de operações.
 
 ---
 
 ## 🎯 Estrutura de Atuação
 
-- **[Padronização Operacional](ca://s?q=Padronizacao_operacional_em_condominios_premium)**  
-  Protocolos claros de atendimento, manutenção e segurança, com registros e evidências que comprovam a qualidade da entrega.  
+- **[Padronização Operacional](docs/padronizacao-operacional.md)**
+  Protocolos claros de atendimento, manutenção e segurança, com registros e evidências que asseguram a qualidade da entrega.
 
-- **[Gestão Integrada de Prestadores](ca://s?q=Gestao_integrada_de_prestadores_em_condominio)**  
-  Coordenação de empresas independentes (CNPJs), sem vínculo trabalhista, garantindo blindagem jurídica e eficiência.  
+- **[Gestão Integrada de Prestadores](docs/gestao-integrada-prestadores.md)**
+  Coordenação de empresas prestadoras independentes (CNPJs), sem vínculo trabalhista direto, garantindo blindagem jurídica e eficiência.
 
-- **[Relatórios e Indicadores](ca://s?q=Relatorios_e_indicadores_em_condominio_premium)**  
-  Consolidação de KPIs e provas de desempenho entregues ao síndico ou cliente, assegurando transparência e confiança.  
+- **[Relatórios e Indicadores](docs/relatorios-e-indicadores.md)**
+  Consolidação de KPIs e evidências de desempenho entregues ao cliente ou síndico, assegurando transparência.
 
-- **[Caixa de Operação](ca://s?q=Caixa_de_operacao_em_condominio_premium)**  
-  Estrutura organizada para emergências, impostos e folha de pagamento, garantindo estabilidade da operação.  
+- **[Caixa de Operação](docs/caixa-de-operacao.md)**
+  Estrutura financeira para emergências, folha e tributos, garantindo estabilidade da operação.
 
 ---
 
 ## ✅ Diferenciais FASE
 
-- Gestão premium com foco em alto padrão.  
-- Blindagem jurídica e financeira.  
-- Transparência com relatórios mensais.  
-- Integração tecnológica e processos digitais.  
-- Equipe coordenada sem subordinação direta.  
+- Gestão premium com foco em alto padrão.
+- Blindagem jurídica e financeira.
+- Transparência com relatórios periódicos.
+- Integração tecnológica e processos digitais.
+- Equipe coordenada sem subordinação direta.
 
 ---
 
-📌 Esse README atualizado posiciona a **FASE** como uma **gestão premium de facilities e eventos**, clara, objetiva e institucional.
+## Como contribuir
+
+Este repositório contém documentação institucional. Para sugerir melhorias:
+
+1. Abra uma issue descrevendo a sugestão ou correção.
+2. Abra um pull request com o arquivo atualizado (preferencialmente em docs/).
+
+Veja [CONTRIBUTING.md](docs/CONTRIBUTING.md) para mais detalhes.
+
+---
+
+## Licença
+
+Se desejar que eu adicione uma licença, indique qual (ex.: MIT, Apache-2.0) ou envie o arquivo LICENSE.md.
+
+---
+
+## Contato
+
+Para perguntas e parcerias: suporte@fase.com.br (substitua pelo contato oficial)
