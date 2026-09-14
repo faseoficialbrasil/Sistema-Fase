@@ -146,3 +146,25 @@ a:hover {
   color: var(--branco-suave);
   text-decoration: underline;
 }
+/* Layout responsivo */
+body {
+  max-width: 600px;   /* largura máxima da página */
+  margin: 0 auto;     /* centraliza o conteúdo */
+  padding: 0 1rem;    /* espaço lateral em telas pequenas */
+}
+
+/* Ajuste para títulos e textos em telas menores */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 2.2rem; /* reduz logo em celulares */
+  }
+
+  section h2 {
+    font-size: 1.6rem; /* títulos menores em telas pequenas */
+  }
+
+  body {
+    font-size: 18px;   /* texto mais equilibrado em celular */
+    line-height: 1.6;
+  }
+  }
