@@ -12,7 +12,7 @@ body {
   margin: 0;
   background: url('img/fase-background.jpeg') no-repeat center/cover;
   color: var(--branco-suave);
-  max-width: 520px;   /* largura reduzida para melhor alinhamento */
+  max-width: 500px;   /* largura reduzida para melhor alinhamento */
   margin: 0 auto;
   padding: 0 1rem;
 }
