@@ -2,7 +2,7 @@
 #inicio {
   background: rgba(255, 255, 255, 0.08); /* vidro translúcido */
   backdrop-filter: blur(8px);
-  border-left: 4px solid var(--dourado); /* detalhe lateral */
+  border-left: 4px solid var(--dourado); /* detalhe lateral dourado */
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -22,7 +22,7 @@
 #portfolio {
   background: rgba(255, 255, 255, 0.05); /* vidro mais leve */
   backdrop-filter: blur(10px);
-  border-top: 3px solid var(--dourado); /* detalhe superior */
+  border-top: 3px solid var(--dourado); /* detalhe superior dourado */
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -40,9 +40,9 @@
 
 /* Seção Equipe */
 #equipe {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08); /* vidro translúcido */
   backdrop-filter: blur(8px);
-  border: 2px dashed var(--dourado); /* detalhe diferente */
+  border: 2px dashed var(--dourado); /* detalhe tracejado dourado */
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
