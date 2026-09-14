@@ -7,11 +7,14 @@
 
 body {
   font-family: 'Inter', 'Helvetica Neue', sans-serif;
-  font-size: 20px;   /* aumentado para melhor leitura */
-  line-height: 1.8;  /* mais espaçamento */
+  font-size: 20px;   /* leitura confortável */
+  line-height: 1.8;
   margin: 0;
   background: url('img/fase-background.jpeg') no-repeat center/cover;
   color: var(--branco-suave);
+  max-width: 600px;   /* largura máxima para celular */
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 body::before {
@@ -32,7 +35,7 @@ body::before {
 }
 
 .logo {
-  font-size: 3rem;   /* maior destaque */
+  font-size: 3rem;
   font-weight: bold;
   color: var(--dourado);
   text-transform: uppercase;
@@ -66,7 +69,7 @@ body::before {
   border: 2px solid var(--dourado);
   border-radius: 10px;
   color: var(--branco-suave);
-  font-size: 1.4rem; /* aumentado */
+  font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
   transition: transform 0.2s ease, color 0.2s ease;
@@ -81,43 +84,15 @@ body::before {
 #main { padding: 2rem; }
 
 section {
+  border: 2px solid var(--dourado); /* borda uniforme */
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
-}
-
-#inicio {
-  background: rgba(255, 255, 255, 0.08);
-  border-left: 4px solid var(--dourado);
-}
-
-#servicos {
-  background: rgba(10, 31, 68, 0.7);
-  border: 2px solid var(--dourado);
-}
-
-#portfolio {
-  background: rgba(255, 255, 255, 0.05);
-  border-top: 3px solid var(--dourado);
-}
-
-#depoimentos {
-  background: rgba(201, 166, 70, 0.15);
-  font-style: italic;
-}
-
-#equipe {
-  background: rgba(255, 255, 255, 0.08);
-  border: 2px dashed var(--dourado);
-}
-
-#contato {
-  background: rgba(10, 31, 68, 0.75);
-  border: 2px solid var(--dourado);
+  background: rgba(255, 255, 255, 0.05); /* fundo leve e consistente */
 }
 
 section h2 {
-  font-size: 2rem;   /* títulos maiores */
+  font-size: 2rem;
   color: var(--dourado);
   margin-bottom: 0.5rem;
 }
@@ -127,7 +102,7 @@ section h2 {
   background: rgba(10, 31, 68, 0.85);
   text-align: center;
   padding: 1rem;
-  font-size: 1.2rem; /* rodapé mais legível */
+  font-size: 1.2rem;
   border-top: 2px solid var(--dourado);
 }
 
@@ -146,34 +121,19 @@ a:hover {
   color: var(--branco-suave);
   text-decoration: underline;
 }
-/* Layout responsivo */
-body {
-  max-width: 600px;   /* largura máxima da página */
-  margin: 0 auto;     /* centraliza o conteúdo */
-  padding: 0 1rem;    /* espaço lateral em telas pequenas */
-}
 
-/* Ajuste para títulos e textos em telas menores */
+/* Responsividade */
 @media (max-width: 480px) {
   .logo {
-    font-size: 2.2rem; /* reduz logo em celulares */
+    font-size: 2.2rem;
   }
 
   section h2 {
-    font-size: 1.6rem; /* títulos menores em telas pequenas */
+    font-size: 1.6rem;
   }
 
   body {
-    font-size: 18px;   /* texto mais equilibrado em celular */
+    font-size: 18px;
     line-height: 1.6;
   }
-
-  /* Ajuste para campo de e-mail */
-#contato p a {
-  display: block;          /* força o link a ocupar a linha inteira */
-  max-width: 100%;         /* ocupa toda a largura disponível */
-  word-break: break-word;  /* quebra o texto se necessário */
-  overflow-wrap: anywhere; /* garante quebra em qualquer ponto */
-  font-size: 1.2rem;       /* aumenta a legibilidade */
-  margin-top: 0.5rem;      /* dá espaço entre telefone e e-mail */
 }
