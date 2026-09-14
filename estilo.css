@@ -168,3 +168,11 @@ body {
     line-height: 1.6;
   }
   }
+/* Ajuste para links longos (como e-mail) */
+#contato a {
+  display: inline-block;
+  max-width: 100%;       /* ocupa toda a largura disponível */
+  word-break: break-word; /* quebra o texto se necessário */
+  overflow-wrap: anywhere;
+  font-size: 1.2rem;     /* aumenta a legibilidade */
+}
