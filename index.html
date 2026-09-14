@@ -27,11 +27,11 @@
       background: var(--azul);
       color: var(--branco);
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 1.5rem 1rem;
     }
 
     .logo {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: bold;
       color: var(--dourado);
       margin-bottom: 0.5rem;
@@ -40,21 +40,22 @@
     #nav ul {
       list-style: none;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       background: var(--cinza);
       margin: 0;
       padding: 0.5rem;
     }
 
     #nav ul li {
-      margin: 0 1rem;
+      margin: 0.5rem 0;
     }
 
     #nav ul li a {
       color: var(--branco);
       text-decoration: none;
       font-weight: 500;
+      font-size: 1rem;
     }
 
     #nav ul li a:hover {
@@ -62,7 +63,7 @@
     }
 
     #main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
@@ -70,6 +71,7 @@
     .section h2 {
       color: var(--azul);
       margin-bottom: 0.5rem;
+      font-size: 1.2rem;
     }
 
     .section {
@@ -89,15 +91,18 @@
       text-decoration: none;
     }
 
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       #nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
       }
       #nav ul li {
-        margin: 0.5rem 0;
+        margin: 0 1rem;
       }
       .logo {
+        font-size: 2rem;
+      }
+      .section h2 {
         font-size: 1.5rem;
       }
     }
@@ -113,14 +118,6 @@
   <div id="nav">
     <ul>
       <li><a href="#inicio">Início</a></li>
-      <li><a href="#doutrina">A Doutrina</a></li>
-      <li><a href="#constituicao">Constituição</a></li>
-      <li><a href="#documentos">Documentos</a></li>
-      <li><a href="#metodologia">Metodologia</a></li>
-      <li><a href="#guias">Guias Técnicos</a></li>
-      <li><a href="#pops">POPs</a></li>
-      <li><a href="#evidencias">Banco de Evidências</a></li>
-      <li><a href="#glossario">Glossário</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </div>
@@ -131,23 +128,10 @@
       <p>A FASE é uma arquitetura de operação voltada para eventos e condomínios de alto padrão, coordenando prestadores independentes com foco em organização e blindagem jurídica.</p>
     </div>
 
-    <div class="section" id="documentos">
-      <h2>Serviços Premium</h2>
-      <ul>
-        <li>Recepção bilíngue</li>
-        <li>Concierge especializado</li>
-        <li>Supervisor de recepção</li>
-        <li>Segurança integrada</li>
-        <li>Jardineiro</li>
-        <li>Auxiliar de manutenção</li>
-        <li>Zelador</li>
-      </ul>
-    </div>
-
     <div class="section" id="contato">
       <h2>Contato</h2>
       <p>Solicite uma apresentação personalizada e descubra como a FASE pode elevar a gestão do seu condomínio ou evento.</p>
-      <p>📞 WhatsApp: <a href="tel:+5511999999999">+55 11 95198‑7669</a></p>
+      <p>📞 WhatsApp: <a href="tel:+5511951987669">+55 11 95198‑7669</a></p>
       <p>✉ faseoficialbrasil@gmail.com.br</p>
     </div>
   </div>
