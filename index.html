@@ -23,6 +23,7 @@
       line-height: 1.6;
     }
 
+    /* Cabeçalho */
     #header {
       background: var(--azul);
       color: var(--branco);
@@ -37,10 +38,11 @@
       margin-bottom: 0.5rem;
     }
 
+    /* Menu mobile first */
     #nav ul {
       list-style: none;
       display: flex;
-      flex-direction: column;
+      flex-direction: column; /* padrão mobile */
       align-items: center;
       background: var(--cinza);
       margin: 0;
@@ -62,6 +64,7 @@
       color: var(--dourado);
     }
 
+    /* Conteúdo */
     #main {
       max-width: 1000px;
       margin: 2rem auto;
@@ -78,6 +81,7 @@
       margin-bottom: 2rem;
     }
 
+    /* Rodapé */
     #footer {
       background: var(--azul);
       color: var(--branco);
@@ -91,9 +95,10 @@
       text-decoration: none;
     }
 
+    /* Ajustes para telas maiores */
     @media (min-width: 768px) {
       #nav ul {
-        flex-direction: row;
+        flex-direction: row; /* horizontal em desktop */
         justify-content: center;
       }
       #nav ul li {
