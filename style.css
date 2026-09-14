@@ -10,7 +10,7 @@ body {
   font-size: 18px;
   line-height: 1.6;
   margin: 0;
-  background: url('imagem/fase-fundo.png') no-repeat center/cover;
+  background: url('img/fase-fundo.png') no-repeat center/cover;
   color: #EAEAEA; /* tom perolado */
 }
 
