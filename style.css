@@ -1,0 +1,91 @@
+:root {
+  --azul: #0A1F44;
+  --cinza: #4A4A4A;
+  --dourado: #C9A646;
+  --branco: #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  font-size: 18px; /* fonte base maior */
+  line-height: 1.6;
+  margin: 0;
+  background: url('img/fase-background.png') no-repeat center/cover;
+  color: var(--branco);
+}
+
+/* Cabeçalho */
+#header {
+  background: rgba(10, 31, 68, 0.85);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--dourado);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Menu hambúrguer */
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--dourado);
+  cursor: pointer;
+}
+
+#nav.hidden { display: none; }
+
+#nav ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-item {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1); /* vidro */
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--dourado);
+  border-radius: 10px;
+  color: var(--branco);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  color: var(--dourado);
+}
+
+/* Conteúdo */
+#main {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: var(--dourado);
+  margin-bottom: 0.5rem;
+}
+
+/* Rodapé */
+#footer {
+  background: rgba(10, 31, 68, 0.85);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  border-top: 2px solid var(--dourado);
+}
