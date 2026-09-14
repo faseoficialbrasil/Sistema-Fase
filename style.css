@@ -13,6 +13,16 @@ body {
   line-height: 1.6;
 }
 
+body {
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  color: #C9A646; /* dourado */
+  font-size: 2rem;
+  font-weight: bold;
+}
 #header {
   background: var(--azul);
   color: var(--branco);
