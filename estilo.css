@@ -7,12 +7,12 @@
 
 body {
   font-family: 'Inter', 'Helvetica Neue', sans-serif;
-  font-size: 20px;   /* leitura confortável */
+  font-size: 20px;
   line-height: 1.8;
   margin: 0;
   background: url('img/fase-background.jpeg') no-repeat center/cover;
   color: var(--branco-suave);
-  max-width: 600px;   /* largura máxima para celular */
+  max-width: 520px;   /* largura reduzida para melhor alinhamento */
   margin: 0 auto;
   padding: 0 1rem;
 }
