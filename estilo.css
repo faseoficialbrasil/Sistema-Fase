@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Inter', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;   /* aumentado para melhor leitura */
+  line-height: 1.8;  /* mais espaçamento */
   margin: 0;
   background: url('img/fase-background.jpeg') no-repeat center/cover;
   color: var(--branco-suave);
@@ -32,7 +32,7 @@ body::before {
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 3rem;   /* maior destaque */
   font-weight: bold;
   color: var(--dourado);
   text-transform: uppercase;
@@ -41,7 +41,7 @@ body::before {
 
 /* Menu */
 .menu-toggle {
-  font-size: 2rem;
+  font-size: 2.2rem;
   background: none;
   border: none;
   color: var(--dourado);
@@ -66,7 +66,7 @@ body::before {
   border: 2px solid var(--dourado);
   border-radius: 10px;
   color: var(--branco-suave);
-  font-size: 1.2rem;
+  font-size: 1.4rem; /* aumentado */
   font-weight: bold;
   text-decoration: none;
   transition: transform 0.2s ease, color 0.2s ease;
@@ -117,7 +117,7 @@ section {
 }
 
 section h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;   /* títulos maiores */
   color: var(--dourado);
   margin-bottom: 0.5rem;
 }
@@ -127,9 +127,10 @@ section h2 {
   background: rgba(10, 31, 68, 0.85);
   text-align: center;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem; /* rodapé mais legível */
   border-top: 2px solid var(--dourado);
-  }
+}
+
 /* Links padrão */
 a {
   color: var(--dourado);
@@ -137,12 +138,10 @@ a {
   font-weight: bold;
 }
 
-/* Links visitados */
 a:visited {
   color: var(--dourado);
 }
 
-/* Links ao passar o mouse */
 a:hover {
   color: var(--branco-suave);
   text-decoration: underline;
