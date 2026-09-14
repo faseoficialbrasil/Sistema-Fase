@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>FASE — Rede Operacional</title>
-  <!-- Chamando o CSS externo -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
   <!-- Cabeçalho -->
@@ -14,7 +13,7 @@
     <button class="menu-toggle">☰</button>
   </header>
 
-  <!-- Menu hambúrguer -->
+  <!-- Menu -->
   <nav id="nav" class="hidden">
     <ul>
       <li><a href="#inicio" class="menu-item">Início</a></li>
@@ -26,7 +25,7 @@
     </ul>
   </nav>
 
-  <!-- Conteúdo principal -->
+  <!-- Conteúdo -->
   <main id="main">
     <section id="inicio">
       <h2>Sobre a FASE</h2>
@@ -67,11 +66,7 @@
     <p>© 2026 FASE — Gestão Premium de Facilities e Eventos</p>
   </footer>
 
-  <!-- Script para abrir/fechar menu -->
-  <script>
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-      document.getElementById('nav').classList.toggle('hidden');
-    });
-  </script>
+  <!-- Script -->
+  <script src="js/script.js"></script>
 </body>
 </html>
