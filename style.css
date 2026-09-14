@@ -10,8 +10,8 @@ body {
   font-size: 18px;
   line-height: 1.6;
   margin: 0;
-  background: url(/img/fase-background.jpeg') no-repeat center/cover;
-  color: var(--branco-suave);
+  background: url('imagem/fase-fundo.jpeg') no-repeat center/cover;
+  color: #EAEAEA; /* tom perolado */
 }
 
 /* Overlay para melhorar contraste */
