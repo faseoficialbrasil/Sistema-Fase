@@ -8,110 +8,32 @@
   <title>FASE — Gestão Premium</title>
 
   <style type="text/css">
-    :root {
-      --azul: #0A1F44;
-      --cinza: #4A4A4A;
-      --dourado: #C9A646;
-      --branco: #FFFFFF;
-    }
+  body {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    line-height: 1.6;
 
+    /* Background padrão (desktop/notebook) */
+    background-image: url('img/fase-background.jpg'); /* sua imagem 2036x1868 */
+    background-size: cover;       /* cobre toda a tela */
+    background-position: center;  /* centraliza */
+    background-repeat: no-repeat;
+    color: #4A4A4A;
+  }
+
+  /* Ajustes para telas maiores */
+  @media (min-width: 768px) {
+    .logo { font-size: 2rem; }
+    .section h2 { font-size: 1.5rem; }
+  }
+
+  /* Background otimizado para mobile */
+  @media (max-width: 767px) {
     body {
-      font-family: 'Inter', 'Helvetica Neue', sans-serif;
-      background: var(--branco);
-      color: var(--cinza);
-      margin: 0;
-      line-height: 1.6;
+      background-image: url('img/fase-background-mobile.jpg'); /* versão menor 1080x1920 */
     }
-
-    /* Cabeçalho */
-    #header {
-      background: var(--azul);
-      color: var(--branco);
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: var(--dourado);
-      margin-bottom: 0.5rem;
-    }
-
-    /* Menu mobile first */
-    #nav ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column; /* padrão mobile */
-      align-items: center;
-      background: var(--cinza);
-      margin: 0;
-      padding: 0.5rem;
-    }
-
-    #nav ul li {
-      margin: 0.5rem 0;
-    }
-
-    #nav ul li a {
-      color: var(--branco);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-    }
-
-    #nav ul li a:hover {
-      color: var(--dourado);
-    }
-
-    /* Conteúdo */
-    #main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .section h2 {
-      color: var(--azul);
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
-    }
-
-    .section {
-      margin-bottom: 2rem;
-    }
-
-    /* Rodapé */
-    #footer {
-      background: var(--azul);
-      color: var(--branco);
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-
-    #footer a {
-      color: var(--dourado);
-      text-decoration: none;
-    }
-
-    /* Ajustes para telas maiores */
-    @media (min-width: 768px) {
-      #nav ul {
-        flex-direction: row; /* horizontal em desktop */
-        justify-content: center;
-      }
-      #nav ul li {
-        margin: 0 1rem;
-      }
-      .logo {
-        font-size: 2rem;
-      }
-      .section h2 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 
 <body>
