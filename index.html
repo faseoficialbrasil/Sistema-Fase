@@ -6,7 +6,102 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>FASE — Gestão Premium</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <style type="text/css">
+    :root {
+      --azul: #0A1F44;
+      --cinza: #4A4A4A;
+      --dourado: #C9A646;
+      --branco: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      background: var(--branco);
+      color: var(--cinza);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    #header {
+      background: var(--azul);
+      color: var(--branco);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--dourado);
+      margin-bottom: 0.5rem;
+    }
+
+    #nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: var(--cinza);
+      margin: 0;
+      padding: 0.5rem;
+    }
+
+    #nav ul li {
+      margin: 0 1rem;
+    }
+
+    #nav ul li a {
+      color: var(--branco);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #nav ul li a:hover {
+      color: var(--dourado);
+    }
+
+    #main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section h2 {
+      color: var(--azul);
+      margin-bottom: 0.5rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    #footer {
+      background: var(--azul);
+      color: var(--branco);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    #footer a {
+      color: var(--dourado);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      #nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      #nav ul li {
+        margin: 0.5rem 0;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -17,26 +112,26 @@
 
   <div id="nav">
     <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="doutrina.html">A Doutrina</a></li>
-      <li><a href="constituicao.html">Constituição</a></li>
-      <li><a href="documentos.html">Documentos</a></li>
-      <li><a href="metodologia.html">Metodologia</a></li>
-      <li><a href="guias.html">Guias Técnicos</a></li>
-      <li><a href="pops.html">POPs</a></li>
-      <li><a href="evidencias.html">Banco de Evidências</a></li>
-      <li><a href="glossario.html">Glossário</a></li>
-      <li><a href="contato.html">Contato</a></li>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#doutrina">A Doutrina</a></li>
+      <li><a href="#constituicao">Constituição</a></li>
+      <li><a href="#documentos">Documentos</a></li>
+      <li><a href="#metodologia">Metodologia</a></li>
+      <li><a href="#guias">Guias Técnicos</a></li>
+      <li><a href="#pops">POPs</a></li>
+      <li><a href="#evidencias">Banco de Evidências</a></li>
+      <li><a href="#glossario">Glossário</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
   </div>
 
   <div id="main">
-    <div class="section">
+    <div class="section" id="inicio">
       <h2>Sobre a FASE</h2>
-      <p>A FASE é uma arquitetura de operação voltada para eventos e condomínios de alto padrão...</p>
+      <p>A FASE é uma arquitetura de operação voltada para eventos e condomínios de alto padrão, coordenando prestadores independentes com foco em organização e blindagem jurídica.</p>
     </div>
 
-    <div class="section">
+    <div class="section" id="documentos">
       <h2>Serviços Premium</h2>
       <ul>
         <li>Recepção bilíngue</li>
@@ -48,12 +143,17 @@
         <li>Zelador</li>
       </ul>
     </div>
+
+    <div class="section" id="contato">
+      <h2>Contato</h2>
+      <p>Solicite uma apresentação personalizada e descubra como a FASE pode elevar a gestão do seu condomínio ou evento.</p>
+      <p>📞 WhatsApp: <a href="tel:+5511999999999">+55 11 99999‑9999</a></p>
+      <p>✉ contato@fasegestao.com.br</p>
+    </div>
   </div>
 
   <div id="footer">
     <p>© 2026 FASE — Gestão Premium de Facilities e Eventos</p>
-    <p>📞 WhatsApp: <a href="tel:+5511999999999">+55 11 99999‑9999</a></p>
-    <p>✉ contato@fasegestao.com.br</p>
   </div>
 </body>
 </html>
