@@ -3,270 +3,1302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FASE REDE OPERACIONAL - Gestão Estratégica de Eventos Corporativos</title>
+
+    <title>FASE Rede Operacional | Gestão Estratégica de Eventos</title>
+
+    <meta
+        name="description"
+        content="A FASE estrutura, dimensiona e coordena a operação de eventos por meio de uma rede operacional sob governança técnica, com decisões registradas e acompanhamento por etapas."
+    >
+
+    <meta name="theme-color" content="#0B1F3A">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <style>
         :root {
-            --primary: #0f172a;
-            --secondary: #2563eb;
-            --accent: #38bdf8;
-            --neutral-dark: #1e293b;
-            --neutral-light: #f8fafc;
-            --text-main: #334155;
-            --border: #e2e8f0;
+            --azul-marinho: #0B1F3A;
+            --azul-medio: #2F5D9B;
+            --azul-claro: #DCE6F3;
+
+            --ouro: #B8913A;
+            --ouro-claro: #E4CD8F;
+
+            --fundo: #F3F5F8;
+            --branco: #FFFFFF;
+
+            --texto: #1C2A3D;
+            --texto-suave: #4A5A70;
+
+            --linha: #CBD5E3;
+
+            --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+            --sans: 'Source Sans 3', 'Segoe UI', Tahoma, Arial, sans-serif;
+
+            --largura: 1180px;
+            --raio: 14px;
+            --sombra: 0 18px 45px rgba(11, 31, 58, 0.10);
         }
 
-        * {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            background-color: var(--neutral-light);
-            color: var(--text-main);
+            background: var(--fundo);
+            color: var(--texto);
+            font-family: var(--sans);
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
 
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 4px solid var(--secondary);
+        a {
+            color: inherit;
+            text-decoration: none;
         }
 
-        .logo-text {
-            font-size: 2.5rem;
-            font-weight: 800;
-            letter-spacing: 2px;
-            color: white;
-        }
-
-        .logo-sub {
-            font-size: 1.1rem;
-            color: var(--accent);
-            margin-top: 5px;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        img {
+            max-width: 100%;
+            display: block;
         }
 
         .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            width: min(100% - 32px, var(--largura));
+            margin-inline: auto;
         }
 
-        .hero-statement {
-            background: white;
-            border-left: 5px solid var(--secondary);
-            padding: 25px;
-            margin-bottom: 40px;
-            border-radius: 4px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        /* =========================
+           CABEÇALHO
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(11, 31, 58, 0.97);
+            border-bottom: 1px solid rgba(228, 205, 143, 0.25);
+            backdrop-filter: blur(12px);
         }
 
-        .hero-statement p {
-            font-size: 1.2rem;
-            color: var(--neutral-dark);
-            font-weight: 500;
+        .nav {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
         }
 
-        h2 {
-            color: var(--primary);
-            font-size: 1.8rem;
-            margin-bottom: 25px;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 10px;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--branco);
         }
 
-        .grid-pilares {
+        .logo-mark {
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--ouro);
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
+            place-items: center;
+            color: var(--ouro-claro);
+            font-family: var(--serif);
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 1px;
         }
 
-        .card-pilar {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.02);
-            transition: transform 0.2s;
+        .logo-text strong {
+            display: block;
+            font-family: var(--serif);
+            font-size: 20px;
+            letter-spacing: 1px;
         }
 
-        .card-pilar:hover {
-            transform: translateY(-5px);
-            border-color: var(--secondary);
+        .logo-text span {
+            display: block;
+            color: #B9C6D8;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
         }
 
-        .card-pilar h3 {
-            color: var(--secondary);
-            margin-bottom: 15px;
-            font-size: 1.3rem;
+        .nav-links {
+            display: none;
+            align-items: center;
+            gap: 28px;
+            color: #DCE5F0;
+            font-size: 14px;
+            font-weight: 600;
         }
 
-        .card-pilar ul {
-            list-style: none;
+        .nav-links a:hover {
+            color: var(--ouro-claro);
         }
 
-        .card-pilar li {
-            margin-bottom: 12px;
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 11px 16px;
+            border: 1px solid var(--ouro);
+            color: var(--ouro-claro);
+            font-size: 13px;
+            font-weight: 700;
+            border-radius: 6px;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(11, 31, 58, 0.98),
+                    rgba(21, 48, 82, 0.96)
+                );
+            color: var(--branco);
+            padding: 76px 0 84px;
             position: relative;
-            padding-left: 20px;
-            font-size: 0.95rem;
+            overflow: hidden;
         }
 
-        .card-pilar li::before {
-            content: "✓";
+        .hero::after {
+            content: "";
             position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-weight: bold;
+            width: 420px;
+            height: 420px;
+            right: -180px;
+            top: -180px;
+            border: 1px solid rgba(228, 205, 143, 0.18);
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 70px rgba(228, 205, 143, 0.025),
+                0 0 0 140px rgba(228, 205, 143, 0.018);
         }
 
-        .grid-modelos {
+        .hero-grid {
+            position: relative;
+            z-index: 1;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 25px;
-            margin-bottom: 50px;
+            gap: 48px;
         }
 
-        @media(max-width: 500px) {
-            .grid-modelos { grid-template-columns: 1fr; }
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--ouro-claro);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
-        .card-modelo {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            border-top: 4px solid var(--primary);
+        .eyebrow::before {
+            content: "";
+            width: 30px;
+            height: 1px;
+            background: var(--ouro);
         }
 
-        .card-modelo h3 {
-            color: var(--primary);
-            margin-bottom: 10px;
+        h1,
+        h2,
+        h3 {
+            font-family: var(--serif);
         }
 
-        .cta-section {
-            background-color: var(--primary);
-            color: white;
-            padding: 40px;
+        .hero h1 {
+            max-width: 760px;
+            font-size: clamp(42px, 8vw, 72px);
+            line-height: 1.03;
+            letter-spacing: -1.5px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 span {
+            color: var(--ouro-claro);
+        }
+
+        .hero-lead {
+            max-width: 700px;
+            color: #D8E1EC;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 34px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .cta-btn,
+        .secondary-btn {
+            min-height: 52px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 22px;
+            border-radius: 7px;
+            font-weight: 700;
             text-align: center;
-            border-radius: 8px;
-            margin-top: 40px;
-        }
-
-        .cta-section h3 {
-            font-size: 1.6rem;
-            margin-bottom: 15px;
         }
 
         .cta-btn {
-            display: inline-block;
-            background-color: var(--secondary);
-            color: white;
-            padding: 15px 35px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background 0.2s;
+            background: var(--ouro);
+            color: var(--branco);
         }
 
         .cta-btn:hover {
-            background-color: #1d4ed8;
+            background: #A98230;
         }
 
-        footer {
+        .secondary-btn {
+            border: 1px solid rgba(255,255,255,0.25);
+            color: var(--branco);
+        }
+
+        .secondary-btn:hover {
+            border-color: var(--ouro-claro);
+            color: var(--ouro-claro);
+        }
+
+        .hero-panel {
+            background: rgba(255,255,255,0.055);
+            border: 1px solid rgba(255,255,255,0.12);
+            padding: 28px;
+            border-radius: var(--raio);
+        }
+
+        .hero-panel-title {
+            color: var(--ouro-claro);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.7px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .flow {
+            display: grid;
+            gap: 14px;
+        }
+
+        .flow-item {
+            display: grid;
+            grid-template-columns: 34px 1fr;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .flow-number {
+            width: 32px;
+            height: 32px;
+            border: 1px solid rgba(228,205,143,0.55);
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            color: var(--ouro-claro);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .flow-item strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .flow-item span {
+            color: #AEBED1;
+            font-size: 12px;
+        }
+
+        /* =========================
+           SEÇÕES
+        ========================= */
+
+        section {
+            padding: 78px 0;
+        }
+
+        .section-header {
+            max-width: 760px;
+            margin-bottom: 42px;
+        }
+
+        .section-label {
+            color: var(--azul-medio);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(32px, 6vw, 48px);
+            line-height: 1.1;
+            color: var(--azul-marinho);
+            margin-bottom: 18px;
+        }
+
+        .section-header p {
+            color: var(--texto-suave);
+            font-size: 17px;
+        }
+
+        /* =========================
+           PROBLEMA
+        ========================= */
+
+        .problem {
+            background: var(--branco);
+        }
+
+        .problem-grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .problem-card {
+            padding: 28px;
+            border: 1px solid var(--linha);
+            border-radius: var(--raio);
+            background: var(--branco);
+        }
+
+        .problem-card strong {
+            display: block;
+            color: var(--azul-marinho);
+            font-family: var(--serif);
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .problem-card p {
+            color: var(--texto-suave);
+            font-size: 15px;
+        }
+
+        /* =========================
+           FASE
+        ========================= */
+
+        .fase-section {
+            background: var(--fundo);
+        }
+
+        .fase-grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .fase-card {
+            background: var(--branco);
+            border-top: 3px solid var(--ouro);
+            padding: 30px;
+            border-radius: 0 0 var(--raio) var(--raio);
+            box-shadow: var(--sombra);
+        }
+
+        .fase-card .number {
+            color: var(--ouro);
+            font-family: var(--serif);
+            font-size: 34px;
+            font-weight: 700;
+        }
+
+        .fase-card h3 {
+            color: var(--azul-marinho);
+            font-size: 23px;
+            margin: 8px 0 10px;
+        }
+
+        .fase-card p {
+            color: var(--texto-suave);
+            font-size: 15px;
+        }
+
+        /* =========================
+           REDE
+        ========================= */
+
+        .network {
+            background: var(--azul-marinho);
+            color: var(--branco);
+        }
+
+        .network .section-label {
+            color: var(--ouro-claro);
+        }
+
+        .network .section-header h2 {
+            color: var(--branco);
+        }
+
+        .network .section-header p {
+            color: #C5D1DF;
+        }
+
+        .network-grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .network-card {
+            border: 1px solid rgba(255,255,255,0.13);
+            padding: 28px;
+            border-radius: var(--raio);
+            background: rgba(255,255,255,0.035);
+        }
+
+        .network-card h3 {
+            color: var(--ouro-claro);
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .network-card p {
+            color: #C3CFDD;
+            font-size: 14px;
+        }
+
+        /* =========================
+           PROCESSO
+        ========================= */
+
+        .process {
+            background: var(--branco);
+        }
+
+        .process-list {
+            display: grid;
+            gap: 0;
+            border-top: 1px solid var(--linha);
+        }
+
+        .process-item {
+            display: grid;
+            grid-template-columns: 48px 1fr;
+            gap: 18px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--linha);
+        }
+
+        .process-number {
+            color: var(--ouro);
+            font-family: var(--serif);
+            font-size: 23px;
+            font-weight: 700;
+        }
+
+        .process-item h3 {
+            color: var(--azul-marinho);
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .process-item p {
+            color: var(--texto-suave);
+            font-size: 14px;
+        }
+
+        /* =========================
+           PARA QUEM
+        ========================= */
+
+        .audience {
+            background: var(--fundo);
+        }
+
+        .audience-grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .audience-card {
+            padding: 26px;
+            background: var(--branco);
+            border: 1px solid var(--linha);
+            border-radius: var(--raio);
+        }
+
+        .audience-card h3 {
+            color: var(--azul-marinho);
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .audience-card p {
+            color: var(--texto-suave);
+            font-size: 14px;
+        }
+
+        /* =========================
+           DIFERENCIAL
+        ========================= */
+
+        .differential {
+            background: var(--branco);
+        }
+
+        .quote-box {
+            border-left: 4px solid var(--ouro);
+            padding: 12px 0 12px 24px;
+            margin-top: 30px;
+        }
+
+        .quote-box p {
+            color: var(--azul-marinho);
+            font-family: var(--serif);
+            font-size: clamp(24px, 5vw, 36px);
+            line-height: 1.25;
+        }
+
+        /* =========================
+           CTA FINAL
+        ========================= */
+
+        .final-cta {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--azul-marinho),
+                    #16385F
+                );
+            color: var(--branco);
             text-align: center;
-            padding: 40px 20px;
-            color: #94a3b8;
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border);
-            margin-top: 40px;
+        }
+
+        .final-cta h2 {
+            max-width: 760px;
+            margin: 0 auto 18px;
+            font-size: clamp(34px, 6vw, 52px);
+            line-height: 1.08;
+        }
+
+        .final-cta p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #C7D3E1;
+            font-size: 16px;
+        }
+
+        .final-cta .cta-btn {
+            display: inline-flex;
+            min-width: 240px;
+        }
+
+        /* =========================
+           RODAPÉ
+        ========================= */
+
+        footer {
+            background: #07182D;
+            color: #AEBCCE;
+            padding: 34px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .footer-brand strong {
+            display: block;
+            color: var(--branco);
+            font-family: var(--serif);
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .footer-brand span {
+            font-size: 12px;
+        }
+
+        .footer-note {
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .footer-copy {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 20px;
+            font-size: 11px;
+            color: #8091A7;
+        }
+
+        /* =========================
+           RESPONSIVIDADE
+        ========================= */
+
+        @media (min-width: 700px) {
+
+            .hero {
+                padding: 100px 0;
+            }
+
+            .hero-actions {
+                flex-direction: row;
+            }
+
+            .hero-grid {
+                grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.7fr);
+                align-items: center;
+            }
+
+            .problem-grid,
+            .fase-grid,
+            .network-grid,
+            .audience-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                align-items: end;
+            }
+        }
+
+        @media (min-width: 960px) {
+
+            .nav-links {
+                display: flex;
+            }
+
+            .problem-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .fase-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .network-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .audience-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            section {
+                padding: 100px 0;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo-text">FASE REDE OPERACIONAL</div>
-        <div class="logo-sub">Gestão Estratégica & Arquitetura de Operações Corporativas</div>
-    </header>
+<header>
+    <div class="container nav">
 
-    <div class="container">
-        
-        <section class="hero-statement">
-            <p>Transformamos a complexidade logística de eventos corporativos em uma operação previsível, segura e de alta performance. Atuamos de forma independente na governança técnica, blindando sua marca contra passivos trabalhistas e falhas operacionais.</p>
-        </section>
+        <a href="#" class="logo" aria-label="FASE Rede Operacional">
+            <div class="logo-mark">F</div>
 
-        <section>
-            <h2>Nossos Pilares de Atuação</h2>
-            <div class="grid-pilares">
-                
-                <div class="card-pilar">
-                    <h3>1. Arquitetura Operacional</h3>
-                    <ul>
-                        <li><strong>Dimensionamento Analítico:</strong> Definição exata e técnica do contingente necessário de apoio, eliminando desperdícios financeiros.</li>
-                        <li><strong>Desenho de Fluxos Críticos:</strong> Rotas de credenciamento rápido, zonas restritas e planos de contingência guiada.</li>
-                        <li><strong>Logística VIP:</strong> Protocolos de movimentação e integridade para autoridades, palestrantes e executivos.</li>
-                    </ul>
+            <div class="logo-text">
+                <strong>FASE</strong>
+                <span>Rede Operacional</span>
+            </div>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegação principal">
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#rede">Rede</a>
+            <a href="#processo">Processo</a>
+            <a href="#para-quem">Aplicações</a>
+        </nav>
+
+        <a
+            href="https://wa.me/5511951987669"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Solicitar diagnóstico
+        </a>
+
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <div>
+
+                <div class="eyebrow">
+                    Governança da Exposição Operacional
                 </div>
 
-                <div class="card-pilar">
-                    <h3>2. Governança e Rede</h3>
-                    <ul>
-                        <li><strong>Auditoria de Fornecedores:</strong> Triagem jurídica minuciosa de agências parceiras locais (portaria, recepção, brigadas).</li>
-                        <li><strong>Mitigação de Riscos:</strong> Neutralização total de vínculos empregatícios e corresponsabilidade trabalhista para o promotor.</li>
-                        <li><strong>Alinhamento de SLAs:</strong> Implantação e fiscalização de rígidos Acordos de Nível de Serviço.</li>
-                    </ul>
-                </div>
+                <h1>
+                    Seu evento precisa de
+                    <span>coordenação.</span>
+                    Não apenas de fornecedores.
+                </h1>
 
-                <div class="card-pilar">
-                    <h3>3. Coordenação Geral</h3>
-                    <ul>
-                        <li><strong>Ponto Focal Único:</strong> Centralização de comando. Sua empresa não se desgasta tratando com múltiplos fornecedores no dia.</li>
-                        <li><strong>Sala de Crise Ativa:</strong> Monitoramento tático e resolução ágil de qualquer gargalo de acesso ou incidente operacional.</li>
-                        <li><strong>Relatório de Performance:</strong> Entrega pós-evento de indicadores reais de eficiência e fluxo.</li>
-                    </ul>
+                <p class="hero-lead">
+                    A FASE estrutura a operação do evento antes que ela aconteça,
+                    dimensiona as necessidades, organiza a rede operacional e
+                    acompanha a execução por etapas.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a
+                        href="https://wa.me/5511951987669"
+                        class="cta-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Solicitar Diagnóstico Operacional
+                    </a>
+
+                    <a href="#como-funciona" class="secondary-btn">
+                        Entender a metodologia
+                    </a>
+
                 </div>
 
             </div>
-        </section>
 
-        <section>
-            <h2>Modelos de Contratação B2B</h2>
-            <div class="grid-modelos">
-                
-                <div class="card-modelo">
-                    <h3>Fee por Projeto Executivo</h3>
-                    <p>Valor fixo planejado e acordado com base no cronograma estratégico pré-evento e dias de execução em campo. Perfeito para convenções de vendas, feiras setoriais e roadshows.</p>
+            <aside class="hero-panel">
+
+                <div class="hero-panel-title">
+                    Ciclo FASE
                 </div>
 
-                <div class="card-modelo">
-                    <h3>Management Fee</h3>
-                    <p>Percentual estratégico (de 10% a 15%) calculado exclusivamente sobre o volume orçamentário operacional e de facilities contratado. Governança total da sua cadeia de fornecedores.</p>
+                <div class="flow">
+
+                    <div class="flow-item">
+                        <div class="flow-number">01</div>
+                        <div>
+                            <strong>Diagnóstico</strong>
+                            <span>Identificação das necessidades</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-item">
+                        <div class="flow-number">02</div>
+                        <div>
+                            <strong>Dimensionamento</strong>
+                            <span>Definição da estrutura necessária</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-item">
+                        <div class="flow-number">03</div>
+                        <div>
+                            <strong>Composição</strong>
+                            <span>Formação da rede operacional</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-item">
+                        <div class="flow-number">04</div>
+                        <div>
+                            <strong>Coordenação</strong>
+                            <span>Acompanhamento da execução</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-item">
+                        <div class="flow-number">05</div>
+                        <div>
+                            <strong>Evidência</strong>
+                            <span>Registro das decisões e resultados</span>
+                        </div>
+                    </div>
+
                 </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROBLEMA -->
+
+    <section class="problem" id="como-funciona">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    O problema
+                </div>
+
+                <h2>
+                    Um evento pode ter bons profissionais e ainda assim apresentar falhas.
+                </h2>
+
+                <p>
+                    A dificuldade normalmente não está apenas na contratação.
+                    Está na ausência de uma estrutura responsável por enxergar
+                    o conjunto da operação.
+                </p>
 
             </div>
-        </section>
 
-        <section class="cta-section">
-            <h3>Pronto para blindar a operação do seu próximo evento corporativo?</h3>
-            <p>Garanta previsibilidade, redução de ambiguidade e conformidade jurídica total com a nossa gestão.</p>
-            <a href="#" class="cta-btn">Solicitar Diagnóstico Operacional</a>
-        </section>
+            <div class="problem-grid">
+
+                <article class="problem-card">
+                    <strong>Funções mal dimensionadas</strong>
+                    <p>
+                        Pessoas podem ser contratadas sem relação clara entre
+                        quantidade, função, duração e necessidade real do evento.
+                    </p>
+                </article>
+
+                <article class="problem-card">
+                    <strong>Fornecedores desconectados</strong>
+                    <p>
+                        Cada prestador executa sua parte, mas ninguém necessariamente
+                        coordena as interfaces entre as diferentes operações.
+                    </p>
+                </article>
+
+                <article class="problem-card">
+                    <strong>Decisões sem registro</strong>
+                    <p>
+                        Alterações durante a preparação ou execução podem ocorrer
+                        sem histórico claro, dificultando controle e responsabilização.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- METODOLOGIA -->
+
+    <section class="fase-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    Sistema FASE
+                </div>
+
+                <h2>
+                    A operação começa antes da montagem.
+                </h2>
+
+                <p>
+                    A metodologia organiza o evento como um sistema de necessidades,
+                    funções, responsabilidades, interfaces, controles e evidências.
+                </p>
+
+            </div>
+
+            <div class="fase-grid">
+
+                <article class="fase-card">
+                    <div class="number">01</div>
+                    <h3>Mapear</h3>
+                    <p>
+                        Identificar o evento, seu contexto, público, duração,
+                        ambiente, riscos e necessidades operacionais.
+                    </p>
+                </article>
+
+                <article class="fase-card">
+                    <div class="number">02</div>
+                    <h3>Dimensionar</h3>
+                    <p>
+                        Transformar necessidades em funções, quantidades,
+                        horários, recursos e responsabilidades.
+                    </p>
+                </article>
+
+                <article class="fase-card">
+                    <div class="number">03</div>
+                    <h3>Coordenar</h3>
+                    <p>
+                        Organizar a interação entre as diferentes operações
+                        e acompanhar sua execução.
+                    </p>
+                </article>
+
+                <article class="fase-card">
+                    <div class="number">04</div>
+                    <h3>Evidenciar</h3>
+                    <p>
+                        Registrar decisões, ocorrências, controles e resultados
+                        para formar uma base operacional verificável.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REDE OPERACIONAL -->
+
+    <section class="network" id="rede">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    Rede Operacional
+                </div>
+
+                <h2>
+                    Uma necessidade pode exigir várias operações.
+                </h2>
+
+                <p>
+                    A FASE não reduz o evento a uma única contratação.
+                    A estrutura é formada conforme as necessidades identificadas.
+                </p>
+
+            </div>
+
+            <div class="network-grid">
+
+                <article class="network-card">
+                    <h3>Hospitalidade</h3>
+                    <p>
+                        Recepção, orientação, apoio ao público, organização
+                        de ambientes e suporte às necessidades dos convidados.
+                    </p>
+                </article>
+
+                <article class="network-card">
+                    <h3>Alimentos e bebidas</h3>
+                    <p>
+                        Apoio de salão, bar, copa, cozinha, reposição,
+                        organização e encerramento da operação.
+                    </p>
+                </article>
+
+                <article class="network-card">
+                    <h3>Infraestrutura</h3>
+                    <p>
+                        Montagem, desmontagem, apoio logístico, organização
+                        dos ambientes e suporte operacional.
+                    </p>
+                </article>
+
+                <article class="network-card">
+                    <h3>Limpeza e conservação</h3>
+                    <p>
+                        Preparação, manutenção durante o evento, reposição
+                        de materiais e limpeza pós-evento.
+                    </p>
+                </article>
+
+                <article class="network-card">
+                    <h3>Controle operacional</h3>
+                    <p>
+                        Coordenação, comunicação, acompanhamento de tarefas,
+                        registros e tratamento de ocorrências.
+                    </p>
+                </article>
+
+                <article class="network-card">
+                    <h3>Operações especiais</h3>
+                    <p>
+                        Necessidades específicas identificadas no diagnóstico
+                        são incorporadas conforme o escopo contratado.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROCESSO -->
+
+    <section class="process" id="processo">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    Processo
+                </div>
+
+                <h2>
+                    Do briefing ao encerramento.
+                </h2>
+
+                <p>
+                    Cada etapa possui uma finalidade operacional específica.
+                    A estrutura é construída a partir das necessidades reais do evento.
+                </p>
+
+            </div>
+
+            <div class="process-list">
+
+                <article class="process-item">
+                    <div class="process-number">01</div>
+                    <div>
+                        <h3>Briefing</h3>
+                        <p>
+                            Recebimento das informações fundamentais do evento
+                            e definição do contexto operacional.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="process-item">
+                    <div class="process-number">02</div>
+                    <div>
+                        <h3>Levantamento de necessidades</h3>
+                        <p>
+                            Identificação das operações necessárias para
+                            preparar, executar e encerrar o evento.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="process-item">
+                    <div class="process-number">03</div>
+                    <div>
+                        <h3>Dimensionamento</h3>
+                        <p>
+                            Definição de funções, quantidades, horários,
+                            interfaces e requisitos de cada operação.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="process-item">
+                    <div class="process-number">04</div>
+                    <div>
+                        <h3>Composição da rede</h3>
+                        <p>
+                            Organização dos profissionais e fornecedores
+                            necessários à execução do escopo aprovado.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="process-item">
+                    <div class="process-number">05</div>
+                    <div>
+                        <h3>Execução coordenada</h3>
+                        <p>
+                            Acompanhamento das operações e tratamento das
+                            ocorrências identificadas durante a execução.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="process-item">
+                    <div class="process-number">06</div>
+                    <div>
+                        <h3>Encerramento</h3>
+                        <p>
+                            Conferência final, registros, ocorrências,
+                            aprendizados e consolidação das evidências.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PARA QUEM -->
+
+    <section class="audience" id="para-quem">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    Aplicações
+                </div>
+
+                <h2>
+                    A estrutura acompanha o evento.
+                </h2>
+
+                <p>
+                    Não existe uma operação padrão que sirva para todos os eventos.
+                    O escopo é construído a partir da necessidade identificada.
+                </p>
+
+            </div>
+
+            <div class="audience-grid">
+
+                <article class="audience-card">
+                    <h3>Eventos corporativos</h3>
+                    <p>
+                        Convenções, confraternizações, lançamentos,
+                        reuniões e experiências corporativas.
+                    </p>
+                </article>
+
+                <article class="audience-card">
+                    <h3>Eventos sociais</h3>
+                    <p>
+                        Celebrações, aniversários, recepções,
+                        festas particulares e encontros.
+                    </p>
+                </article>
+
+                <article class="audience-card">
+                    <h3>Eventos gastronômicos</h3>
+                    <p>
+                        Operações com bar, cozinha, salão,
+                        copa, reposição e atendimento.
+                    </p>
+                </article>
+
+                <article class="audience-card">
+                    <h3>Eventos com apresentações</h3>
+                    <p>
+                        Estruturas que combinam público,
+                        alimentação, atendimento e programação.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DIFERENCIAL -->
+
+    <section class="differential">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    Princípio FASE
+                </div>
+
+                <h2>
+                    Governar a exposição operacional é diferente de simplesmente contratar pessoas.
+                </h2>
+
+                <p>
+                    O objetivo é criar clareza antes da execução, estabelecer
+                    responsabilidades e produzir evidências durante o processo.
+                </p>
+
+            </div>
+
+            <div class="quote-box">
+                <p>
+                    Estabilidade nos fundamentos.
+                    Evolução nos métodos.
+                    Adaptação nas aplicações.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="final-cta">
+
+        <div class="container">
+
+            <h2>
+                Conte o que você está planejando.
+            </h2>
+
+            <p>
+                A partir do briefing, a FASE identifica as necessidades
+                operacionais e estrutura o próximo passo.
+            </p>
+
+            <a
+                href="https://wa.me/5511951987669"
+                class="cta-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Solicitar Diagnóstico Operacional
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <strong>FASE Rede Operacional</strong>
+            <span>Governança técnica da operação de eventos.</span>
+        </div>
+
+        <div class="footer-note">
+            A FASE estrutura e coordena a operação conforme o escopo contratado.
+            A execução das atividades é realizada pelos respectivos profissionais
+            e prestadores responsáveis.
+        </div>
+
+        <div class="footer-copy">
+            © 2026 Sistema FASE. Todos os direitos reservados.
+        </div>
 
     </div>
 
-    <footer>
-        <p>&copy; 2026 FASE REDE OPERACIONAL. Todos os direitos reservados.</p>
-        <p>Redução de Ambiguidade &bull; Padronização de Decisão &bull; Controle Operacional</p>
-    </footer>
+</footer>
 
 </body>
 </html>
